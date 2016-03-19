@@ -19,12 +19,14 @@
   },
   "homepage": "https://github.com/AnnaBlackwell/sudoku-react#readme",
   "devDependencies": {
+    "babel-loader": "^6.2.4",
     "chai": "^3.5.0",
     "chai-enzyme": "^0.4.1",
     "enzyme": "^2.1.0",
     "mocha": "^2.4.5",
     "tap-spec": "^4.1.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.8.4"
   },
   "dependencies": {
     "babel-core": "^6.7.2",
