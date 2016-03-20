@@ -8,9 +8,11 @@ export default React.createClass({
     return (
       <div className={boxClass}>
         {this.props.cells.map(function(cell) {
-          return <Cell cell={cell} />
+          return <Cell cell={cell}/>
           })}
       </div>
     )
   }
 })
+
+// initialBoxContents={this.props.initialBoxContents}

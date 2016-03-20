@@ -20,7 +20,7 @@ describe('Board', () => {
   }
 
   it('should have a div with id board', () => {
-    const wrapper = shallow(<Board />)
+    const wrapper = mount(<Board />)
     expect(wrapper.find('#board')).to.have.length(1)
   })
   it('should have a 9 divs with className of "box" ', () => {
