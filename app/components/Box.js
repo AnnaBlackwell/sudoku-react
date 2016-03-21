@@ -7,12 +7,17 @@ export default React.createClass({
 
     return (
       <div className='box'>
+        {this.props.box.map(function(number) {
+          // Ω('number', number)
+          return number
+          })
+        }
         {this.props.cells.map(function(cell) {
-          return <Cell cell={cell} />
-          })}
+          return <Cell cell={cell} number={this.props.number} />
+          }.bind(this))}
       </div>
     )
   }
 })
 
-// Everything breaks when I add box={this.props.box}
+// How to pit one number in each cell, instead of 9 numbers on top of each box?
