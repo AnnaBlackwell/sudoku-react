@@ -14,5 +14,3 @@ export default React.createClass({
     )
   }
 })
-
-// initialBoxContents={this.props.initialBoxContents}

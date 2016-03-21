@@ -1,6 +1,6 @@
 import React from 'react'
 
-//need to make number props
+//need to make Number props
 
 export default React.createClass({
   constructor(props) {
@@ -24,7 +24,7 @@ export default React.createClass({
         )
       }
   renderEdit() {
-      return <input type="text"
+      return <input type="number"
         autoFocus={true}
         defaultValue={this.props.number}
         onBlur={this.finishEdit}
