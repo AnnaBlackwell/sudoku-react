@@ -3,17 +3,14 @@ import React from 'react'
 // import PCell from './PCell'
 
 
-//Number not defined
-
 export default React.createClass({
 
   render: function () {
     let cellClass = "cell " + this.props.cell
 
-
     return (
       <div className={cellClass}>
-
+        0
       </div>
     )
   }
