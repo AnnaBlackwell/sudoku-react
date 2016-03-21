@@ -875,7 +875,7 @@ getRandomBoard(array) => {
   return array[randomIndex]
 }
 
-randomBoard(difficulty) => {
+export randomBoard(difficulty) => {
   if (difficulty === 'easy') {
     getRandomBoard(easy)
   }
@@ -886,5 +886,3 @@ randomBoard(difficulty) => {
     getRandomBoard(hard)
   }
 }
-
-module.exports = randomBoard
