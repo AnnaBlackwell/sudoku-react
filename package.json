@@ -42,6 +42,7 @@
     "babel-runtime": "^6.6.1",
     "body-parser": "^1.15.0",
     "domready": "^1.0.8",
+    "lodash": "^4.7.0",
     "lomega": "^1.0.3",
     "node-uuid": "^1.4.7",
     "react": "^0.14.7",
