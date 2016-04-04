@@ -21,7 +21,7 @@ const props = {
 
 describe('Box', () => {
   it('should have a 9 divs with className of "cell" ', () => {
-    const wrapper = mount(<Box />)
-    expect(wrapper.find('.cell')).to.have.length(9)
+    const wrapper = shallow(<Box {...props}/>)
+    expect(wrapper.find('.cell').length).to.equal(9)
   })
 })

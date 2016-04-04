@@ -8,7 +8,7 @@ export default React.createClass({
     let boxes = this.props.boxes
     return (
       <div id='board'>
-          {_.map(boxes, function(box, index) {
+          {_.map(boxes, function (box, index) {
             return <Box
               box={box}
               cells={this.props.cells}
