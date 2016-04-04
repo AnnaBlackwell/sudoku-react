@@ -13,8 +13,10 @@ export default React.createClass({
           if (number === '0') {
             return <div className='cell' key={index}><InputCell number={number} /></div>
           } else {
-            return <div className='cell' key={index}><PCell number={number} /></div> }
-        })}
+            return <div className='cell' key={index}><PCell number={number} /></div>
+          }
+        })
+        }
       </div>
     )
   }

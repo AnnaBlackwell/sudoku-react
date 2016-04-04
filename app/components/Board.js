@@ -6,13 +6,15 @@ export default React.createClass({
 
   render: function () {
     let boxes = this.props.boxes
+    let boxClass = 'box'
     return (
       <div id='board'>
           {_.map(boxes, function (box, index) {
             return <Box
               box={box}
               cells={this.props.cells}
-              key={index}/>
+              key={index}
+              className={boxClass}/>
           }.bind(this)
           )}
       </div>
