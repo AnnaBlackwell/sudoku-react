@@ -1,23 +1,16 @@
 import React from 'react'
-import Cell from './Cell'
+import _ from 'lodash'
 
 export default React.createClass({
 
   render: function () {
-
+    let box = this.props.box
     return (
       <div className='box'>
-        {this.props.box.map(function(number) {
-          // Ω('number', number)
-          return number
-          })
-        }
-        {this.props.cells.map(function(cell) {
-          return <Cell cell={cell} number={this.props.number} />
-          }.bind(this))}
+        {_.map(box, function (number, index) {
+          return <div className='cell' key={index}>{number}</div>
+        })}
       </div>
     )
   }
 })
-
-// How to pit one number in each cell, instead of 9 numbers on top of each box?

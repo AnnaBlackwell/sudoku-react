@@ -6,10 +6,12 @@ body {
 }
 
 .box {
-  width: 94px;
+  width: 86px;
   float: left;
   border-style: solid;
-  border-color: 1px;
+  border-width: thin;
+  border-color: rgba(175, 172, 175, 0.86);
+  margin: none;
 }
 
 #board {
@@ -21,11 +23,12 @@ h1 {
   text-align: center;
 }
 .cell {
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
   float: left;
   border-style: solid;
   border-width: 1px;
+  border-color: rgb(213, 211, 213);
   text-align: center;
   padding-top: 4px;
   padding-bottom: 4px;

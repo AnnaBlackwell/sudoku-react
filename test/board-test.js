@@ -21,7 +21,7 @@ describe('Board', () => {
 
   it('should have a div with id board', () => {
     const wrapper = render(<Board />)
-    expect(wrapper.find('div')).to.have.length(1)
+    expect(wrapper.find('#board')).to.have.length(1)
   })
 
 })
