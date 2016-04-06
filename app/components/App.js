@@ -61,7 +61,6 @@ export default React.createClass({
 
   updateBoard: function () {
     console.log('updating board')
-
   },
 
   render: function () {

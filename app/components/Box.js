@@ -1,6 +1,5 @@
 import React from 'react'
 import InputCell from './InputCell'
-import PCell from './PCell'
 import _ from 'lodash'
 
 export default React.createClass({
@@ -13,7 +12,7 @@ export default React.createClass({
           if (number === '0') {
             return <div className='cell' key={index}><InputCell number={number} updateBoard={this.props.updateBoard}/></div>
           } else {
-            return <div className='cell' key={index}><PCell number={number} /></div>
+            return <div className='cell' key={index}>{number}</div>
           }
         }.bind(this)
       )}
