@@ -10,8 +10,8 @@ describe('App', () => {
     const wrapper = shallow(<App />)
     expect(wrapper.find('#main-title')).to.have.length(1)
   })
-  it('should have 3 buttons', () => {
+  it('should have 4 buttons', () => {
     const wrapper = shallow(<App />)
-    expect(wrapper.find('.btn')).to.have.length(3)
+    expect(wrapper.find('.btn')).to.have.length(4)
   })
 })
