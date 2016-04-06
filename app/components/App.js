@@ -59,6 +59,11 @@ export default React.createClass({
     alert("Oops! That wasn't quite right")
   },
 
+  updateBoard: function () {
+    console.log('updating board')
+
+  },
+
   render: function () {
     return (
       <div>
@@ -69,6 +74,7 @@ export default React.createClass({
           <button className='btn btn-primary btn-sm'>Hard</button>
         </div>
         <Board
+          updateBoard={this.updateBoard}
           boxes={this.state.boxes}
           cells={this.state.cells}
           />

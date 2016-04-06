@@ -14,7 +14,8 @@ export default React.createClass({
               box={box}
               cells={this.props.cells}
               key={index}
-              className={boxClass}/>
+              className={boxClass}
+              updateBoard={this.props.updateBoard}/>
           }.bind(this)
           )}
       </div>
